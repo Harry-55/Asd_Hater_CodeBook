@@ -16,5 +16,5 @@ struct BIT{
     }   
     void upd(int x, int v) {_upd(x + 1, v);}
     int query(int x) {return _query(x + 1);}
-    int query(int l, int r) {return (_query(r) - _query(l - 1));}
+    int query(int l, int r) {return (query(r) - query(l - 1));}
 };
